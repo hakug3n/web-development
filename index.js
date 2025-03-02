@@ -101,7 +101,7 @@ function triangle(side1, sideType1, side2, sideType2) {
         return "failed";
     }
 
-    console.log(`a = ${sideA.toFixed(2)}, b = ${sideB.toFixed(2)}, c = ${sideC.toFixed(2)}`);
-    console.log(`α = ${angleAlpha.toFixed(2)}°, β = ${angleBeta.toFixed(2)}°`);
+    console.log(`a = ${sideA.toFixed(2)},\nb = ${sideB.toFixed(2)},\nc = ${sideC.toFixed(2)}`);
+    console.log(`α = ${angleAlpha.toFixed(2)}°,\nβ = ${angleBeta.toFixed(2)}°`);
     return "success";
 }

@@ -1,0 +1,24 @@
+[33mcommit 049ca52c0e51c1b00eff6af18f8c85c8c4fef41f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: 8256c99 7846d98
+Author: Mykola Plikhtiak <114648041+sqPoH@users.noreply.github.com>
+Date:   Sun Mar 2 19:16:39 2025 +0200
+
+    Merge branch 'main' to integrate upstream changes
+
+[33mcommit 8256c9965ff8c7395247ae319d190f1e8c6f5065[m
+Author: Mykola Plikhtiak <114648041+sqPoH@users.noreply.github.com>
+Date:   Sun Mar 2 18:26:09 2025 +0200
+
+    Initial commit
+
+[33mcommit 87bf194c99aa2704c9db0ec13a72df2224875fff[m
+Author: Mykola Plikhtiak <114648041+sqPoH@users.noreply.github.com>
+Date:   Sun Mar 2 18:20:07 2025 +0200
+
+    Initial commit
+
+[33mcommit 7846d986c42a3ab673665ec8250268e0d3ab1342[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: hakug3n <plikhtiak.mykola@comp-sc.if.ua>
+Date:   Sun Mar 2 18:12:01 2025 +0200
+
+    Initial commit
