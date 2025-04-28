@@ -1,0 +1,39 @@
+/* 1. Робимо body флекс-контейнером, щоб усе було по центру екрану */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* по горизонталі */
+    justify-content: center; /* по вертикалі */
+    background: #f0f0f0;
+    font-family: sans-serif;
+}
+
+/* 2. Start та Game екрани теж вирівняні по центру по ширині */
+#startScreen,
+#gameScreen {
+    width: 820px;  /* щоб відповідало ширині канвасу + відступи */
+    text-align: center;
+}
+
+/* 3. Сам прямокутник-ігрове поле */
+#gameCanvas {
+    width: 800px;
+    height: 500px;
+    border: 3px solid #333;       /* видно межі */
+    background-color: #fff;       /* білий фон всередині */
+    position: relative;           /* для абсолютного позиціювання .pixel */
+    overflow: hidden;             /* щоб квадрат не виходив за межі */
+    margin: 10px auto;            /* невеликий відступ зверху/знизу */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* 4. Піксель (квадратик) */
+.pixel {
+    position: absolute;    /* рухається всередині #gameCanvas */
+    border-radius: 4px;    /* заокруглені кути */
+    cursor: pointer;
+}

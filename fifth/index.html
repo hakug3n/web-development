@@ -1,0 +1,63 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel Clicker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #gameCanvas {
+            width: 100%;
+            max-width: 600px;
+            height: 500px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #000;
+        }
+        .pixel {
+            position: absolute;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        #startScreen,
+        #gameScreen {
+            margin: 10px;
+        }
+        #gameScreen {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<h1>Pixel Clicker</h1>
+
+<div id="startScreen">
+    <label>
+        Рівень складності:
+        <select id="difficulty"></select>
+    </label>
+    <br><br>
+    <label>
+        Колір пікселя:
+        <select id="pixelColor"></select>
+    </label>
+    <br><br>
+    <button id="startButton">Старт</button>
+</div>
+
+<div id="gameScreen">
+    <p>Рахунок: <span id="score">0</span></p>
+    <p>Час: <span id="timeLeft">0.0</span> сек</p>
+    <div id="gameCanvas"></div>
+</div>
+
+<!-- Підключаємо як ES-модулі -->
+<script type="module" src="./constants.js"></script>
+<script type="module" src="./index.js"></script>
+</body>
+</html>
