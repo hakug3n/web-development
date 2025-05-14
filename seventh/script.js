@@ -1,15 +1,12 @@
-// Шляхи до JSON-файлів
 const JSON_PATHS = {
     categories: 'categories.json',
     toys:       'toys.json',
     gifts:      'gifts.json'
 };
 
-// Збереження даних
 let categories = [];
 const dataStore = {};
 
-// Завантажити всі JSON-файли при старті
 document.addEventListener('DOMContentLoaded', () => {
     // categories.json
     fetch(JSON_PATHS.categories)
@@ -32,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => { dataStore.gifts = data; })
         .catch(err => console.error('Не вдалось завантажити gifts.json:', err));
 
-    // Навігація
     document.getElementById('homeLink').addEventListener('click', e => {
         e.preventDefault(); showHome();
     });
@@ -69,7 +65,6 @@ function showCatalog() {
 }
 
 function loadCategory(shortname) {
-    // Якщо дані вже в dataStore, беремо їх звідти, інакше робимо fetch
     const existing = dataStore[shortname];
     const render = items => {
         const cat = categories.find(c => c.shortname === shortname);
