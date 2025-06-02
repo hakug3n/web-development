@@ -1,38 +1,21 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Lights Out</title>
-    <style>
-        #grid { display: inline-grid; grid-template-columns: repeat(5, 40px); gap: 2px; }
-        .cell {
-            width: 40px; height:40px;
-            cursor: pointer;
-            border: 1px solid #ccc;
-            display: flex; align-items: center; justify-content: center;
-            user-select: none;
-            font-weight: bold;
-        }
-        .on  { background: blue; }
-        .off { background: yellow; color: #fff; }
-        .wrapper { display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; border: 1px solid black}
-        h1 { color: red; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrapper">
-        <h1>Lights Out</h1>
-        <label for="levelSelect">Рівень:</label>
-        <select id="levelSelect">
-            <option value="">— виберіть —</option>
-        </select>
-        <button id="resetBtn">Скинути</button>
-        <div>
-            Ходи: <span id="moveCount">0</span> (мінімум: <span id="minSteps">–</span>)
-        </div>
-        <div id="grid"></div>
-    </div>
 
-    <script src="script.js"></script>
+    <button id="new">New Game</button>
+    <button id="restart">Restart</button>
+    <div id="field"></div>
+    <b id="target"></b>
+    <b id="changes"></b>
+    <b id="timer"></b>
+
+    <script src="scripts/ajax.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
